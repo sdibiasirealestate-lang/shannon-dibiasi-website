@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact · Shannon DiBiasi</title>
+<meta name="description" content="Get in touch with Shannon DiBiasi, REALTOR® with RETSY — serving Gilbert and the East Valley of Arizona." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-name">Shannon DiBiasi</span>
+    <span class="brand-sub">Realtor® · RETSY</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="properties.html">Properties</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="btn nav-cta">Let's Talk</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero wrap">
+  <span class="eyebrow reveal">Contact</span>
+  <h1 class="display mt-2 reveal" data-d="1">Let's talk.</h1>
+  <p class="lede mt-2 reveal" data-d="2" style="max-width:46ch">Tell me a little about your move and I'll be in touch personally — usually the same day.</p>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="section" style="padding-top:30px">
+  <div class="wrap contact-grid">
+    <!-- Details -->
+    <div class="reveal">
+      <div class="contact-detail">
+        <div class="eyebrow">Call or Text</div>
+        <a href="tel:+13035881251">303·588·1251</a>
+      </div>
+      <div class="contact-detail">
+        <div class="eyebrow">Email</div>
+        <a href="mailto:sdibiasirealestate@gmail.com">sdibiasirealestate@gmail.com</a>
+      </div>
+      <div class="contact-detail">
+        <div class="eyebrow">Brokerage</div>
+        <p>RETSY<br>7316 E 6th Ave, Scottsdale, AZ 85251</p>
+      </div>
+      <div class="contact-detail">
+        <div class="eyebrow">Serving</div>
+        <p>Gilbert · Morrison Ranch · Chandler · Mesa<br>Queen Creek · San Tan Valley · Scottsdale</p>
+      </div>
+      <div class="contact-detail">
+        <div class="eyebrow">License</div>
+        <p>AZ SA678321000</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="reveal" data-d="1">
+      <form id="contactForm">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Buying a home</option>
+            <option>Selling a home</option>
+            <option>Buying &amp; selling</option>
+            <option>Relocation</option>
+            <option>New construction</option>
+            <option>VA / veteran loan</option>
+            <option>Just exploring</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your timeline and what you're looking for…"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%;justify-content:center">Send Message</button>
+        <p style="font-size:.74rem;color:var(--grey-400);margin-top:16px;line-height:1.6">This opens your email app pre-filled and addressed to Shannon. Prefer to call? <a href="tel:+13035881251" style="color:var(--ink);text-decoration:underline">303·588·1251</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="brand-name" style="font-size:1.3rem;letter-spacing:.3em">Shannon DiBiasi</span>
+        <div class="brand-sub" style="margin-top:6px">Realtor®</div>
+        <p>A boutique, concierge approach to real estate across Gilbert and Arizona's East Valley.</p>
+        <a href="https://retsy.com" target="_blank" rel="noopener" class="footer__retsy" style="display:inline-block"><img src="images/retsy-white.png" alt="RETSY" /></a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+13035881251">303.588.1251</a></li>
+          <li><a href="mailto:sdibiasirealestate@gmail.com">sdibiasirealestate@gmail.com</a></li>
+          <li>7316 E 6th Ave<br>Scottsdale, AZ 85251</li>
+          <li>License # SA678321000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Shannon DiBiasi · RETSY. All rights reserved.</span>
+      <span>Gilbert · Chandler · Mesa · Queen Creek · Scottsdale</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = encodeURIComponent(document.getElementById('name').value || '');
+    var email = document.getElementById('email').value || '';
+    var phone = document.getElementById('phone').value || '';
+    var interest = document.getElementById('interest').value || '';
+    var msg = document.getElementById('message').value || '';
+    var subject = encodeURIComponent('Website Inquiry — ' + decodeURIComponent(name));
+    var body = encodeURIComponent(
+      'Name: ' + decodeURIComponent(name) + '\n' +
+      'Email: ' + email + '\n' +
+      'Phone: ' + phone + '\n' +
+      'Interest: ' + interest + '\n\n' +
+      'Message:\n' + msg
+    );
+    window.location.href = 'mailto:sdibiasirealestate@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
