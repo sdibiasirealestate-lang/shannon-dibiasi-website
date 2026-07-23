@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silly-axolotl-c16f99.netlify.app/sitemap.xml
