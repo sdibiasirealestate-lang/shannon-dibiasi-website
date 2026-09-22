@@ -16,6 +16,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://silly-axolotl-c16f99.netlify.app/blog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silly-axolotl-c16f99.netlify.app/blog/morrison-ranch-market-update-september-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://silly-axolotl-c16f99.netlify.app/properties.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
